@@ -14,6 +14,8 @@ class SlingShot{
         World.add(world, this.sling);
     }
 
+    
+
     fly(){
         this.sling.bodyA = null;
     }
@@ -44,5 +46,7 @@ class SlingShot{
             pop();
         }
     }
-    
+    attach(bodyAttach) {
+        this.sling.bodyA = bodyAttach; 
+    }   
 }
